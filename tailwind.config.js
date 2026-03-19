@@ -5,6 +5,11 @@ export default {
     './templates/**/*.html',
     './node_modules/flowbite/**/*.js',
   ],
+  safelist: [
+    {
+      pattern: /bg-\[url\(/,
+    },
+  ],
   theme: {
     extend: {},
   },

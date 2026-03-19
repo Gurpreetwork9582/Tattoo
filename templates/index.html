@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="{{url_for('static',filename='dist/output.css')}}">
 </head>
 
-<body>
+<body >
     
 <nav class="bg-neutral-primary border-default">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://www.instagram.com/mhk.inks" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="static/Images/file.svg" class="h-7" alt="Flowbite Logo" />
+        <!--<img src="static/Images/file.svg" class="h-7" alt="Flowbite Logo" />-->
         <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">MHK Inks</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
@@ -44,15 +44,15 @@
 </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
 
 </html>
-<section class="bg-neutral-primary">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <h1 class="mb-4 mt-8 text-4xl font-bold tracking-tight text-heading md:text-5xl lg:text-6xl">We belive in providing you with best service</h1>
-        <p class="mb-8 text-lg font-normal text-body lg:text-xl sm:px-16 xl:px-48">---------------</p>
-        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+<section class="bg-neutral-primary bg-[url('/static/images/bg.jpg')] bg-fixed bg-cover bg-center ">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 min-h-screen">
+    <!--    <h1 class="mb-4 mt-8 text-4xl font-bold tracking-tight text-heading md:text-5xl lg:text-6xl">We belive in providing you with best service</h1>
+        <p class="mb-8 text-lg font-normal text-body lg:text-xl sm:px-16 xl:px-48">---------------</p> -->
+        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"> 
             <a href="#" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-base px-5 py-3 focus:outline-none">Learn more</a>
             <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-base px-5 py-3 focus:outline-none">
                 <svg class="w-4 h-4 me-1.5 -ms-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -69,37 +69,42 @@
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/11.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/12.jpg" alt="">
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-        </div>
+        
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/13.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/14.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <div class="grid gap-4">
+     <div>
+            <img class="h-auto max-w-full rounded-base" src="static/Images/15.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/16.jpg" alt="">
         </div>
     </div>
+    
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/17.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+            <img class="h-auto max-w-full rounded-base" src="static/Images/18.jpg" alt="">
         </div>
     </div>
+    
+    <!--
     <div class="grid gap-4">
         <div>
             <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
@@ -111,6 +116,7 @@
             <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
         </div>
     </div>
+    -->
 </div>
 
 
