@@ -12,29 +12,6 @@
 </head>
 
 <body>
-
-<!-------- Banner---------->  
-<div id="bottom-banner" tabindex="-1" class="fixed bottom-0 insert-s-0 z-50 flex justify-between w-full p-4 border-t border-default  bg-red-500">
-    <div class="flex items-center mx-auto">
-        <p class="flex items-center text-sm font-normal text-black">
-            <span class="inline-flex items-center justify-center w-6 h-6 shrink-0 me-2.5 bg-neutral-tertiary rounded-full">
-                <svg class="w-3.5 h-3.5  text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.891 15.107 15.11 8.89m-5.183-.52h.01m3.089 7.254h.01M14.08 3.902a2.849 2.849 0 0 0 2.176.902 2.845 2.845 0 0 1 2.94 2.94 2.849 2.849 0 0 0 .901 2.176 2.847 2.847 0 0 1 0 4.16 2.848 2.848 0 0 0-.901 2.175 2.843 2.843 0 0 1-2.94 2.94 2.848 2.848 0 0 0-2.176.902 2.847 2.847 0 0 1-4.16 0 2.85 2.85 0 0 0-2.176-.902 2.845 2.845 0 0 1-2.94-2.94 2.848 2.848 0 0 0-.901-2.176 2.848 2.848 0 0 1 0-4.16 2.849 2.849 0 0 0 .901-2.176 2.845 2.845 0 0 1 2.941-2.94 2.849 2.849 0 0 0 2.176-.901 2.847 2.847 0 0 1 4.159 0Z"/></svg>
-                <span class="sr-only">Discount</span>
-            </span>
-            <span>Website in progress until then visit at <a href="https://www.instagram.com/mhk.inks" class="flex items-center ms-0 text-sm font-medium text-fg-brand md:ms-1 md:inline-flex hover:underline">Instagram
-                <svg class="w-4 h-4 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
-                </a>
-            </span>
-        </p>
-    </div>
-    <div class="flex items-center">
-        <button data-dismiss-target="#bottom-banner" type="button" class="shrink-0 inline-flex justify-center text-sm w-7 h-7 items-center text-body hover:bg-neutral-tertiary hover:text-heading rounded-sm">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
-            <span class="sr-only">Close banner</span>
-        </button>
-    </div>
-</div>
-
 <!---------- Navigation ---------->
 <nav class="bg-neutral-primary border-default">
 
@@ -48,31 +25,26 @@
     <li class="w-full focus-within:z-10">
         <a href="{{ url_for('services') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Services</a>
     </li>
-    <li class="w-full focus-within:z-10">
-        <a href="#" class="inline-block w-full text-body bg-neutral-primary-soft border border-default rounded-e-base hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Pricing</a>
-    </li>
 </ul>
-
 </nav>
-
-</body>
-
-
 
 
 <!---------- background Picture ---------->
 <section class="bg-center bg-no-repeat bg-cover min-h-screen bg-[url('/static/images/bg.jpg')] bg-local bg-dark bg-blend-multiply">
-    <div class="px-7 mx-auto max-w-8xl text-center py-30 lg:py-56">
-        
-      <!-- 
-        <h1 class="mb-6 text-4xl font-bold tracking-tighter text-blue-800 to text-blue-500 md:text-5xl lg:text-6xl">
-            We invest in the world’s potential
+    <div class="px-7 mx-auto max-w-8xl text-center py-20 lg:py-46">
+        <div class="relative mt-10 md:mt-0">
+            <img src="{{ url_for('static', filename='images/DP1.JPG') }} " alt="Mehak verma" class ="w-64 h-64 object-cover rounded-full border-7 border-white shadow-lg">
+
+        </div>
+    <!--
+        <h1 class="mb-6 text-4xl font-bold tracking-tighter text-gray-400 to text-blue-500 py-20 lg:py-40 md:text-5xl lg:text-6xl">
+            MEHAK VERMA
         </h1>
 
-        <p class="mb-8 text-base font-normal  md:text-xl sm:px-16 lg:px-48">
-            Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+        <p class="mb-8 text-red-800 font-normal  md:text-xl sm:px-16 lg:px-48">
+            Specializes in large-scale black and grey realism.
         </p>
-            -->
+         -->
 
     </div>
 </section>
@@ -80,46 +52,101 @@
 
 <!---------- Images ---------->
 <section class=" bg-neutral-primary py-5">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/11.jpg" alt="">
+<div id="gallery" class="relative w-full max-w-7xl mx-auto py-90" data-carousel="slide">
+
+    <!-- Carousel wrapper -->
+    <div class="relative h-90 md:h-96 overflow-hidden rounded-lg">
+
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="{{ url_for('static', filename='images/11.jpg') }}"
+                 class="absolute block w-full h-full object-cover"
+                 alt="">
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/12.jpg" alt="">
+
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{{ url_for('static', filename='images/12.jpg') }}"
+                 class="absolute block w-full h-full object-cover"
+                 alt="">
         </div>
-        
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/13.jpg" alt="">
+
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{{ url_for('static', filename='images/13.jpg') }}"
+                 class="absolute block w-full h-full object-cover"
+                 alt="">
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/14.jpg" alt="">
+
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{{ url_for('static', filename='images/14.jpg') }}"
+                 class="absolute block w-full h-full object-cover"
+                 alt="">
         </div>
-        
+
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{{ url_for('static', filename='images/15.jpg') }}"
+                 class="absolute block w-full h-full object-cover"
+                 alt="">
+        </div>
+
     </div>
 
-    <div class="grid gap-4">
-     <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/15.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/16.jpg" alt="">
-        </div>
-    </div>
-    
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/17.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-base" src="static/Images/18.jpg" alt="">
-        </div>
-    </div>
-    
+    <!-- Previous button -->
+    <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+        data-carousel-prev>
+
+        <span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70">
+            ❮
+        </span>
+    </button>
+
+    <!-- Next button -->
+    <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+        data-carousel-next>
+
+        <span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70">
+            ❯
+        </span>
+    </button>
+
 </div>
+
+
 
 </section>
 
+<!--------------Footer---------------->
+<footer class="bg-neutral-primary lg:bg-black">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-body sm:text-center">Mehak Verma Tatoo Artist </a>.  © 2026 All Rights Reserved.</span>
+    </div>
+</footer>
+
+
+
+<!-------- Banner---------->  
+<div id="bottom-banner" tabindex="-1" class="fixed bottom-0 insert-s-0 z-50 flex justify-between w-full p-4 border-t border-default  bg-neutral-primary">
+    <div class="flex items-center mx-auto">
+            <p class="text-white italic md:text-xl">
+            Welcome to MHK INKS 
+            </p>
+    </div>
+     <div class="flex items-center mx-auto">
+            <p class="text-white italic md:text-xl">
+            111 Vail Street, Moncton, NB
+            </p>
+    </div>
+
+</div>
+
+
+
+
+</body>
 </html>

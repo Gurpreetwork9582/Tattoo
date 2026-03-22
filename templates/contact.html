@@ -47,18 +47,9 @@
     <li class="w-full focus-within:z-10">
         <a href="{{ url_for('services') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Services</a>
     </li>
-    <li class="w-full focus-within:z-10">
-        <a href="#" class="inline-block w-full text-body bg-neutral-primary-soft border border-default rounded-e-base hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Pricing</a>
-    </li>
+    
 </ul>
-
 </nav>
-
-</body>
-
-
-
-
 
 
 <!---------- Contact with Social media ---------->
@@ -67,52 +58,32 @@
         <h2 class="mb-8 text-3xl font-bold text-center text-heading">Contact Me</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-                <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 box-border border border-transparent font-medium leading-5 rounded-base text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 ">
+                <button type="button" onclick="window.open('https://www.facebook.com/profile.php?id=61578412769744')" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 box-border border border-transparent font-medium leading-5 rounded-base text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 ">
                 <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
                 Facebook
                 </button>
 
-                <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center inline-flex items-center">
+                <button type="button" onclick="window.open('https://instagram.com/mhk.inks', '_blank')"  class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-base text-sm px-4 py-2.5 text-center inline-flex items-center">
                 <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd"/></svg>
                 Instagram
                 </button>
+                
+                <a href="mailto:Gurpreetsingh9582.gs@gmail.com"  type="submit" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-orange-400 hover:bg-gradient-to-br hover:scale-105 transform transition duration-300 focus:ring-4 focus:outline-none focus:ring-red-300 shadow-lg shadow-red-500/50 font-medium rounded-base text-sm px-4 py-2.5 inline-flex items-center gap-2">
+                <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2 4a2 2 0 012-2h12a2 2 0 012 2v1l-8 5-8-5V4zm0 3.236l7.386 4.616a1 1 0 001.228 0L18 7.236V16a2 2 0 01-2 2H4a2 2 0 01-2-2V7.236z" clip-rule="evenodd"/></svg>   
+                    Send Message
+                </a>
+
             </div>    
     </div>
 </section>    
-    
-<!--------------Contact with email---------------->
-<section>
-    <div class="mx-auto max-w-screen-md px-4">
-        <h2 class="mb-8 text-3xl font-bold text-center text-heading">OR</h2>
-        
-        <form class="space-y-6">
-            <div>
-                <label for="name" class="block mb-2 text-sm font-medium text-heading">Your Name</label>
-                <input type="text" id="name" placeholder="John Doe" class="w-full px-4 py-3 rounded-base bg-neutral-secondary-medium text-heading placeholder-body border border-default focus:ring-4 focus:ring-brand-medium focus:outline-none">
-            </div>
-
-            <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-heading">Your Email</label>
-                <input type="email" id="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-base bg-neutral-secondary-medium text-heading placeholder-body border border-default focus:ring-4 focus:ring-brand-medium focus:outline-none">
-            </div>
-
-            <div>
-                <label for="message" class="block mb-2 text-sm font-medium text-heading">Message</label>
-                <textarea id="message" rows="6" placeholder="Your message here..." class="w-full px-4 py-3 rounded-base bg-neutral-secondary-medium text-heading placeholder-body border border-default focus:ring-4 focus:ring-brand-medium focus:outline-none"></textarea>
-                
-                <label class="block mb-2.5 text-sm font-medium text-heading" for="file_input">Upload your ideas</label>
-                <input class="cursor-pointer bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body" aria-describedby="file_input_help" id="file_input" type="file">
-
-            </div>
-            <div>
-                <button type="submit" class="w-full text-white bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium rounded-base text-base px-5 py-3 focus:outline-none">
-                    Send Message
-                </button>
-            </div>
-        </form>
-    </div>
-</section>
-
-
 </body>
+
+
+
+<footer class="bg-neutral-primary lg:bg-black">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-body sm:text-center">Mehak Verma Tatoo Artist </a>.  © 2026 All Rights Reserved.</span>
+    </div>
+</footer>
 </html>
