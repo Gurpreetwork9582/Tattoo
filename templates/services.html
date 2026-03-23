@@ -35,22 +35,39 @@
 </div>
 
 <!---------- Navigation ---------->
-<nav class="bg-neutral-primary border-default">
 
-<ul class="hidden text-sm font-medium text-center text-body sm:flex -space-x-px">
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('index') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default rounded-s-base hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none" aria-current="page">Home</a>
-    </li>
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('contact') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Contact</a>
-    </li>
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('services') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Services</a>
-    </li>
-   
+<nav class="bg-neutral-primary border-default">
+<div class="max-w-screen-xl mx-auto px-4">
+
+<ul class="flex flex-col sm:flex-row text-sm font-medium text-center text-body">
+
+<li class="flex-1">
+<a href="{{ url_for('index') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default sm:rounded-s-base hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Home
+</a>
+</li>
+
+<li class="flex-1">
+<a href="{{ url_for('contact') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Contact
+</a>
+</li>
+
+<li class="flex-1">
+<a href="{{ url_for('services') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Services
+</a>
+</li>
+
 </ul>
 
+</div>
 </nav>
+
+
 
 
 
