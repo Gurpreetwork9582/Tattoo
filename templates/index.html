@@ -2,153 +2,169 @@
 <html lang="en" class="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowbite Flask</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='dist/output.css')}}">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Flowbite Flask</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='dist/output.css')}}">
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
 </head>
 
-<body>
-<!---------- Navigation ---------->
-<nav class="bg-neutral-primary border-default">
+<body class="bg-neutral-primary">
 
-<ul class="hidden text-sm font-medium text-center text-body sm:flex -space-x-px">
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('index') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default rounded-s-base hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none" aria-current="page">Home</a>
-    </li>
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('contact') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Contact</a>
-    </li>
-    <li class="w-full focus-within:z-10">
-        <a href="{{ url_for('services') }}" class="inline-block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading focus:ring-4 focus:ring-neutral-secondary-strong font-medium leading-5 text-sm px-4 py-2.5 focus:outline-none">Services</a>
-    </li>
+<!---------- Navigation ---------->
+
+<nav class="bg-neutral-primary border-default">
+<div class="max-w-screen-xl mx-auto px-4">
+
+<ul class="flex flex-col sm:flex-row text-sm font-medium text-center text-body">
+
+<li class="flex-1">
+<a href="{{ url_for('index') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default sm:rounded-s-base hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Home
+</a>
+</li>
+
+<li class="flex-1">
+<a href="{{ url_for('contact') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Contact
+</a>
+</li>
+
+<li class="flex-1">
+<a href="{{ url_for('services') }}"
+class="block w-full text-body bg-neutral-primary-soft border border-default hover:bg-neutral-secondary-medium hover:text-heading px-4 py-3">
+Services
+</a>
+</li>
+
 </ul>
+
+</div>
 </nav>
 
 
-<!---------- background Picture ---------->
+<!---------- Hero Section ---------->
+
 <section
-class="bg-center bg-no-repeat bg-cover min-h-screen"
+class="bg-center bg-no-repeat bg-cover min-h-[70vh] flex items-center justify-center text-center px-4"
 style="background-image: url('{{ url_for('static', filename='Images/bg.jpg') }}');">
-    <div class="px-7 mx-auto max-w-8xl text-center py-20 lg:py-46">
-        <div class="relative mt-10 md:mt-0">
-            <img src="{{ url_for('static', filename='Images/DP1.jpg') }} " alt="Mehak verma" class ="w-64 h-64 object-cover rounded-full border-7 border-white shadow-lg">
 
-        </div>
-    <!--
-        <h1 class="mb-6 text-4xl font-bold tracking-tighter text-gray-400 to text-blue-500 py-20 lg:py-40 md:text-5xl lg:text-6xl">
-            MEHAK VERMA
-        </h1>
+<div class="max-w-4xl mx-auto py-16">
 
-        <p class="mb-8 text-red-800 font-normal  md:text-xl sm:px-16 lg:px-48">
-            Specializes in large-scale black and grey realism.
-        </p>
-         -->
+<img src="{{ url_for('static', filename='Images/DP1.jpg') }}"
+alt="Mehak verma"
+class="mx-auto w-40 h-40 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-white shadow-lg">
 
-    </div>
+</div>
+
 </section>
 
 
-<!---------- Images ---------->
-<section class=" bg-neutral-primary py-5">
-<div id="gallery" class="relative w-full max-w-7xl mx-auto py-90" data-carousel="slide">
+<!---------- Gallery ---------->
 
-    <!-- Carousel wrapper -->
-    <div class="relative h-90 md:h-96 overflow-hidden rounded-lg">
+<section class="bg-neutral-primary py-10 px-4">
 
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="{{ url_for('static', filename='Images/11.jpg') }}"
-                 class="absolute block w-full h-full object-cover"
-                 alt="">
-        </div>
+<div id="gallery"
+class="relative w-full max-w-5xl mx-auto"
+data-carousel="slide">
 
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url_for('static', filename='Images/12.jpg') }}"
-                 class="absolute block w-full h-full object-cover"
-                 alt="">
-        </div>
+<div class="relative h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-lg">
 
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url_for('static', filename='Images/13.jpg') }}"
-                 class="absolute block w-full h-full object-cover"
-                 alt="">
-        </div>
+<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+<img src="{{ url_for('static', filename='Images/11.jpg') }}"
+class="absolute block w-full h-full object-cover">
+</div>
 
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url_for('static', filename='Images/14.jpg') }}"
-                 class="absolute block w-full h-full object-cover"
-                 alt="">
-        </div>
+<div class="hidden duration-700 ease-in-out" data-carousel-item>
+<img src="{{ url_for('static', filename='Images/12.jpg') }}"
+class="absolute block w-full h-full object-cover">
+</div>
 
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ url_for('static', filename='Images/15.jpg') }}"
-                 class="absolute block w-full h-full object-cover"
-                 alt="">
-        </div>
+<div class="hidden duration-700 ease-in-out" data-carousel-item>
+<img src="{{ url_for('static', filename='Images/13.jpg') }}"
+class="absolute block w-full h-full object-cover">
+</div>
 
-    </div>
+<div class="hidden duration-700 ease-in-out" data-carousel-item>
+<img src="{{ url_for('static', filename='Images/14.jpg') }}"
+class="absolute block w-full h-full object-cover">
+</div>
 
-    <!-- Previous button -->
-    <button type="button"
-        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
-        data-carousel-prev>
-
-        <span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70">
-            ❮
-        </span>
-    </button>
-
-    <!-- Next button -->
-    <button type="button"
-        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
-        data-carousel-next>
-
-        <span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70">
-            ❯
-        </span>
-    </button>
+<div class="hidden duration-700 ease-in-out" data-carousel-item>
+<img src="{{ url_for('static', filename='Images/15.jpg') }}"
+class="absolute block w-full h-full object-cover">
+</div>
 
 </div>
 
 
+<button type="button"
+class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+data-carousel-prev>
+
+<span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70 text-white text-xl">
+❮
+</span>
+
+</button>
+
+
+<button type="button"
+class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+data-carousel-next>
+
+<span class="w-10 h-10 flex items-center justify-center rounded-full bg-black/50 group-hover:bg-black/70 text-white text-xl">
+❯
+</span>
+
+</button>
+
+</div>
 
 </section>
 
-<!--------------Footer---------------->
+
+<!-------------- Footer ---------------->
+
 <footer class="bg-neutral-primary lg:bg-black">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-body sm:text-center">Mehak Verma Tatoo Artist </a>.  © 2026 All Rights Reserved.</span>
-    </div>
+
+<div class="max-w-screen-xl mx-auto px-4 py-6">
+
+<hr class="my-4 border-default">
+
+<span class="block text-sm text-body text-center">
+Mehak Verma Tatoo Artist © 2026 All Rights Reserved.
+</span>
+
+</div>
+
 </footer>
 
 
+<!-------- Bottom Banner ---------->
 
-<!-------- Banner---------->  
-<div id="bottom-banner" tabindex="-1" class="fixed bottom-0 insert-s-0 z-50 flex justify-between w-full p-4 border-t border-default  bg-neutral-primary">
-    <div class="flex items-center mx-auto">
-            <p class="text-white italic md:text-xl">
-            Welcome to MHK INKS 
-            </p>
-    </div>
-     <div class="flex items-center mx-auto">
-            <p class="text-white italic md:text-xl">
-            111 Vail Street, Moncton, NB
-            </p>
-    </div>
+<div id="bottom-banner"
+class="fixed bottom-0 left-0 z-50 w-full bg-neutral-primary border-t border-default">
+
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3 text-center gap-2">
+
+<p class="text-white italic text-sm md:text-lg">
+Welcome to MHK INKS
+</p>
+
+<p class="text-white italic text-sm md:text-lg">
+111 Vail Street, Moncton, NB
+</p>
 
 </div>
 
-
-
+</div>
 
 </body>
 </html>
