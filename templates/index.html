@@ -44,32 +44,44 @@
 
 <!---------- background Picture ---------->
 
-<section class="relative pt-20 bg-center bg-no-repeat bg-cover min-h-screen w-full" style="background-image: url('{{ url_for('static', filename='Images/image.jpg') }}');">
-    <div class="px-7 mx-auto max-w-8xl text-center py-20 lg:py-46">
-        <div class="relative mt-0 md:mt-0">
-            <img src="{{ url_for('static', filename='Images/bg.jpg') }} " alt="Mehak verma"  class="w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-80 lg:h-80
-                   object-cover rounded-full border-4 sm:border-6 md:border-8 
-                   border-white shadow-lg">
+<section class="relative pt-20 bg-center bg-no-repeat bg-cover min-h-screen w-full"
+style="background-image: url('{{ url_for('static', filename='Images/image.jpg') }}');">
 
-        </div>
-    
-        <h1 class="mb-10 text-4xl font-bold tracking-tighter text-white  py-20 sm:py-40 lg:py-40 md:text-5xl lg:text-6xl">
+    <div class="flex flex-col items-center justify-center min-h-screen text-center px-7">
+
+        <!-- DP -->
+        <img src="{{ url_for('static', filename='Images/bg.jpg') }}" 
+             alt="Mehak verma"
+             class="w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-80 lg:h-80
+                    object-cover rounded-full border-4 md:border-8 border-white shadow-lg mb-6">
+
+        <!-- Name -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">
             MEHAK VERMA
         </h1>
 
-        <p class="mb-7 text-4xl font-bold tracking-tighter text-white  py-20 lg:py-40 md:text-2xl lg:text-3xl">
-            Tattoo Artist | Line Art | Customized Art
+        <!-- Role -->
+        <p class="text-lg sm:text-xl md:text-2xl text-white mb-2">
+            Tattoo Artist
         </p>
 
-        <p class="mb-8 text-white font-normal  md:text-xl sm:px-16 lg:px-48">
-            Specializes in large-scale black and grey realism.
+        <!-- Skills -->
+        <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
+            Line Art | Customized Art
         </p>
-         
 
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 md:space-x-4">
-            <a href="{{ url_for('Tattoos') }}" type="button" class="inline-flex w-auto items-center justify-center text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium rounded-base text-base px-5 py-3 focus:outline-none">
-                Getting started
-                <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+        <!-- Button -->
+        <div class="flex justify-center">
+            <a href="{{ url_for('Tattoos') }}"
+            class="inline-flex items-center text-white bg-brand hover:bg-brand-strong 
+                   rounded-base text-sm px-4 py-2 sm:text-base sm:px-5 sm:py-3">
+
+                Explore Tattoos 🎨
+
+                <svg class="w-4 h-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                </svg>
+
             </a>
         </div>
 
