@@ -45,20 +45,20 @@
 
 <!---------- Images ---------->
 <section class="bg-neutral-primary py-8 pt-20">
-  <h2 class="mb-8 text-3xl font-bold text-center text-heading">Tattoos</h2>
+  <h2 class="mb-4 text-3xl font-bold text-center text-heading">Tattoos</h2>
   <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
     
 
     <!-- Column 1 -->
-    <div class="grid gap-4">
+    <div class="grid gap-4 overflow-hidden rounded-base">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img  data-modal-toggle="image1" class="w-full transform hover:scale-110 transition-transform duration-300"
              src="{{ url_for('static', filename='Images/19.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image2" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/18.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img  data-modal-toggle="image3" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/13.jpg') }}" alt="">
         
     </div>
@@ -66,22 +66,22 @@
     <!-- Column 2 -->
     <div class="grid gap-4">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image4" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/15.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image5" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/11.jpg') }}" alt="">
     </div>
 
     <!-- Column 3 -->
     <div class="grid gap-4">
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image6" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/16.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image7" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/14.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image8" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/12.jpg') }}" alt="">
 
         
@@ -89,16 +89,168 @@
 
     <!-- Column 4 -->
     <div class="grid gap-4">
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image9" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/17.jpg') }}" alt="">
 
-        <img class="rounded-base hover:scale-105 transition duration-300"
+        <img data-modal-toggle="image10" class="rounded-base hover:scale-105 transition duration-300"
              src="{{ url_for('static', filename='Images/20.jpg') }}" alt="">
     </div>
 
   </div>
 
 </section>
+
+<!-------- Scaling ------>
+<!--Image 1-->
+<div id="image1" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image1">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/19.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 2-->
+<div id="image2" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image2">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/18.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 3-->
+<div id="image3" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image3">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/13.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 4-->
+<div id="image4" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image4">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/15.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 5-->
+<div id="image5" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image5">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/11.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 6-->
+<div id="image6" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image6">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/16.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 7-->
+<div id="image7" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image7">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/14.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 8-->
+<div id="image8" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image8">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/12.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 9-->
+<div id="image9" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image9">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/17.jpg') }}">
+</div>
+</div>
+</div>
+
+<!--Image 10-->
+<div id="image10" tabindex="-1" class="hidden fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-screen md:hidden">
+<div class="relative w-full max-w-xl mx-auto">
+<div class="relative bg-black rounded-lg shadow">
+<button type="button"
+class="absolute top-3 right-3 text-white text-2xl"
+data-modal-hide="image10">
+✕
+</button>
+<img class="w-full rounded-lg"
+src="{{ url_for('static', filename='Images/20.jpg') }}">
+</div>
+</div>
+</div>
+
 
 <!--------------Footer---------------->
 <footer class="bg-neutral-primary lg:bg-black">
