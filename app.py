@@ -15,6 +15,9 @@ def contact():
 def services():
     return render_template("services.html")
 
+@app.route("/Tattoos")
+def Tattoos():
+    return render_template("Tattoos.html")
 
 if __name__ == '__main__':
 	app.run(debug=True)
